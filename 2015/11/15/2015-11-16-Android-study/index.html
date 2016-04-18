@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title> Android 的学习路线（入门到进阶） | Jucsin&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="介绍Android学习的方法的路线和推荐相应的学习书籍和视频  
+如何Android入门？
+
+需要Java 基础（越扎实越好）：考察要点：面对对象基础，IO ，多线程，集合框架。建议看视频：《 Java 4 android 》 ，书籍：《 Java 核心技术卷一》
+搭建Android的环境考察要点：能够初始化一个新项目，能够真机运行。
+看完《 第一行代码 》 ，学完相应的知识点和敲完相应的练习。A">
+<meta property="og:type" content="article">
+<meta property="og:title" content=" Android 的学习路线（入门到进阶）">
+<meta property="og:url" content="http://jucsinyu.com/2015/11/15/2015-11-16-Android-study/index.html">
+<meta property="og:site_name" content="Jucsin's blog">
+<meta property="og:description" content="介绍Android学习的方法的路线和推荐相应的学习书籍和视频  
+如何Android入门？
+
+需要Java 基础（越扎实越好）：考察要点：面对对象基础，IO ，多线程，集合框架。建议看视频：《 Java 4 android 》 ，书籍：《 Java 核心技术卷一》
+搭建Android的环境考察要点：能够初始化一个新项目，能够真机运行。
+看完《 第一行代码 》 ，学完相应的知识点和敲完相应的练习。A">
+<meta property="og:updated_time" content="2015-12-15T07:58:58.324Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content=" Android 的学习路线（入门到进阶）">
+<meta name="twitter:description" content="介绍Android学习的方法的路线和推荐相应的学习书籍和视频  
+如何Android入门？
+
+需要Java 基础（越扎实越好）：考察要点：面对对象基础，IO ，多线程，集合框架。建议看视频：《 Java 4 android 》 ，书籍：《 Java 核心技术卷一》
+搭建Android的环境考察要点：能够初始化一个新项目，能够真机运行。
+看完《 第一行代码 》 ，学完相应的知识点和敲完相应的练习。A">
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/open-sans/styles.css">
+    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/vendor/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.css">
+    
+    
+    
+    
+
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Jucsin&#39;s blog</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">Home</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="/categories">Categories</a>
+                
+                    <a class="main-nav-link" href="/tags">Tags</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.jpg" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Entradas',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categorias',
+            TAGS: 'Etiquetas',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.jpg" />
+            <h2 id="name">Jucsinyu</h2>
+            <h3 id="title">Web Developer &amp; Designer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Shenzhen, China</span>
+            <a id="follow" target="_blank" href="https://github.com/ppoffice/">SEGUIR</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                6
+                <span>Entradas</span>
+            </div>
+            <div class="article-info-block">
+                2
+                <span>Etiquetas</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    <td><a href="https://github.com/DurianSUN" target="_blank" title="github"><i class="fa fa-github"></i></a></td>
+                    
+                    <td><a href="/" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></td>
+                    
+                    <td><a href="/" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></td>
+                    
+                    <td><a href="/" target="_blank" title="dribbble"><i class="fa fa-dribbble"></i></a></td>
+                    
+                    <td><a href="/" target="_blank" title="rss"><i class="fa fa-rss"></i></a></td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-2015-11-16-Android-study" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+             Android 的学习路线（入门到进阶）
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2015/11/15/2015-11-16-Android-study/">
+            <time datetime="2015-11-15T15:56:51.000Z" itemprop="datePublished">2015-11-15</time>
+        </a>
+    </div>
+
+
+                    
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/jekyll-update/">jekyll update</a>
+    </div>
+
+                    
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p><em>介绍Android学习的方法的路线和推荐相应的学习书籍和视频</em>  </p>
+<h2 id="如何Android入门？"><a href="#如何Android入门？" class="headerlink" title="如何Android入门？"></a>如何Android入门？</h2><hr>
+<ol>
+<li>需要Java 基础（越扎实越好）：<br>考察要点：面对对象基础，IO ，多线程，集合框架。<br>建议看视频：《 Java 4 android 》 ，书籍：《 Java 核心技术卷一》<ol>
+<li>搭建Android的环境<br>考察要点：能够初始化一个新项目，能够真机运行。</li>
+<li>看完<strong>《 第一行代码 》</strong> ，学完相应的知识点和敲完相应的练习。<br><strong>Android 基础知识点</strong>：<br>参考封面图片。<br><strong>考察要点</strong>：<br>（1）熟练创建程序，了解项目的基本结构，了解 Android 的日志工具，学会使用 Intent ,熟悉四种基本布局，熟悉四大组件的生命周期，熟悉使用常用控件，会创建自定义控件，能够快速的构建出自己的设计出来的界面，熟练使用碎片。<br>（2）熟练使用广播，注册，接收，学会使用 <code>git</code> 工具，能够创建代码仓库，提交本地代码，学会使用 sharePreferences 保存键值数据，能够熟悉使用 <code>SQlite</code>进行数据存储，学会使用内容提供器，实现跨程序的数据共享，能够获取联系人，并且采用自定义列表将其显示。<br>（3）学会使用 Android 的通知，能够通过代码接受发短信，能够调用摄像头，相册，播放多媒体文件，学会使用 server ,采用后台子线程更新UI，采用异步，AsyncTask ,能够后台定时的执行任务。<br>能够使用手机的各类传感器，学会编写测试用例，进行单元测试。</li>
+<li>尝试整合知识点，做出一个 demo 集合，整合学习到知识点。<br>考察要点：自主完成个人 APP ，结合 Android 基础知识，网络编程，完成一个完整的 mini 项目。<br><strong>建议学习博客：</strong><br><a href="http://www.marschen.com/portal.php" target="_blank" rel="external"> marschen 的 Android 教学</a></li>
+</ol>
+</li>
+</ol>
+<h2 id="如何Android初步进阶？"><a href="#如何Android初步进阶？" class="headerlink" title="如何Android初步进阶？"></a>如何Android初步进阶？</h2><hr>
+<ol>
+<li>Android进阶书籍：《 Android 高级编程4》，《精通 Android 4》，《 Android 开发艺术探索》</li>
+<li>继续夯实java,《 Java 核心技术卷二》，《 Java 编程思想》</li>
+<li>扩展网络编程内容,《 Java 网络编程》,《深入理解 Android 网络编程》</li>
+<li>扩展基础知识面：《大话数据结构》，《大话设计模式》。</li>
+</ol>
+<p><strong>建议学习博客：</strong><br><a href="http://over140.cnblogs.com/" target="_blank" rel="external">农民伯伯</a> <a href="http://byandby.iteye.com/ " target="_blank" rel="external">低级写手</a> <a href="http://www.csdn.net/article/2011-08-30/303833 " target="_blank" rel="external"> CSDN 博文精选： Android 系列开发博客资源汇总</a></p>
+<h2 id="如何向Android小牛迈进"><a href="#如何向Android小牛迈进" class="headerlink" title="如何向Android小牛迈进? "></a>如何向Android小牛迈进? </h2><hr>
+<ol>
+<li>性能优化书籍：《精妙绝伦的 AndroidUI 设计》，《 Android 应用性能优化》   </li>
+<li>窥探Android底层和原理，《 Android 安全与逆向分析》，《 Android 设计与实现》，《 Android 技术内幕-系统卷》，重点关注罗升阳的源码分析<br><a href="http://blog.csdn.net/Luoshengyang?viewmode=contents.com" target="_blank" rel="external">老罗的 Android 开发</a>   </li>
+<li>提高整体代码素养：从重构，设计模式，源码，软件工程角度出发，不仅仅局限于一个小项目，某个知识点<br>推荐书籍：<br><a href="http://book.douban.com/subject/1102259/" target="_blank" rel="external">《人月神话》</a><a href="http://book.douban.com/subject/25965995/" target="_blank" rel="external">《构建之法》</a><a href="http://book.douban.com/subject/3004255/" target="_blank" rel="external">《编程之美》</a><a href="https://book.douban.com/subject/2149642/" target="_blank" rel="external">《移山之道》</a>   </li>
+<li>提高基本功，书籍：<a href="http://book.douban.com/subject/10432347/" target="_blank" rel="external"> 《算法》</a><br><a href="http://book.douban.com/subject/1139426/" target="_blank" rel="external"> 《数据结构与算法分析: C 语言描述》 </a>   </li>
+<li>回归基本点，学习C++，搞 JNI，建议书籍：<a href="http://www.linuxidc.com/Linux/2014-05/101227.htm" target="_blank" rel="external">《C++ PrimerPlus》</a>   </li>
+<li>全面提升计算机素养，弥补数学知识，像更深层次迈进，推荐：<a href="http://book.douban.com/subject/21323941/" target="_blank" rel="external"> 《具体数学》 </a>   </li>
+<li>吸收大神的成果：膜拜 T 神 <a href="https://github.com/Trinea" target="_blank" rel="external">Trinea的github</a> <a href="http://www.trinea.cn/" target="_blank" rel="external">Trinea 的博客</a>，集合各种源码分析，开源组件，android新技术剖析。   </li>
+<li>提升自己的广度和深度，建议在广度上，广泛涉及学习各个方向的知识，数据结构，数据库，操作系统，算法，软件工程，架构，服务器等各个方面。深度在应该不断的追究实现的原理，底层的逻辑，方能够融汇贯通，信手拈来。</li>
+</ol>
+<p><strong>建议学习博客：</strong><br><a href="http://blog.csdn.net/lovelion" target="_blank" rel="external">刘伟技术博客</a><br><a href="http://blog.csdn.net/Luoshengyang?viewmode=contents.com" target="_blank" rel="external">老罗的 Android 开发</a></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://jucsinyu.com/2015/11/15/2015-11-16-Android-study/" data-id="cin5iufle00075ku3fsxiuut5" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="/2015/11/15/2015-11-16-Android-study/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="/2015/11/15/2015-11-16-Android-study/">Comentarios</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2015/11/18/2015-11-18-speak/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Más nuevo</strong>
+            <div class="article-nav-title">
+                
+                    2015 数字媒体技术研究所招新- Android 组演讲
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2015/11/01/2015-11-1-list/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Más viejo</strong>
+            <div class="article-nav-title">近期回顾-记录</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+</section>
+            
+                <aside id="sidebar">
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">Recientes</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/04/17/赵雨佳喵喵/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/salt-lake.jpg)" alt="赵雨佳喵喵" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2016/04/17/赵雨佳喵喵/" class="title">赵雨佳喵喵</a></p>
+                            <p class="item-date"><time datetime="2016-04-17T03:36:28.000Z" itemprop="datePublished">2016-04-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/04/17/我的第一篇博文/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/little-girl.jpg)" alt="我的第一篇博文" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2016/04/17/我的第一篇博文/" class="title">我的第一篇博文</a></p>
+                            <p class="item-date"><time datetime="2016-04-17T03:34:52.000Z" itemprop="datePublished">2016-04-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/04/17/hello-world/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/guitarist.jpg)" alt="Hello World" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2016/04/17/hello-world/" class="title">Hello World</a></p>
+                            <p class="item-date"><time datetime="2016-04-17T03:23:49.915Z" itemprop="datePublished">2016-04-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2015/11/18/2015-11-18-speak/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://7xofac.com1.z0.glb.clouddn.com/幻灯片2.png)" alt="2015 数字媒体技术研究所招新- Android 组演讲" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/jekyll-update/">jekyll update</a></p>
+                            <p class="item-title"><a href="/2015/11/18/2015-11-18-speak/" class="title">2015 数字媒体技术研究所招新- Android 组演讲</a></p>
+                            <p class="item-date"><time datetime="2015-11-18T08:13:51.000Z" itemprop="datePublished">2015-11-18</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2015/11/15/2015-11-16-Android-study/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/jekyll-update/">jekyll update</a></p>
+                            <p class="item-title"><a href="/2015/11/15/2015-11-16-Android-study/" class="title"> Android 的学习路线（入门到进阶）</a></p>
+                            <p class="item-date"><time datetime="2015-11-15T15:56:51.000Z" itemprop="datePublished">2015-11-15</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">Categorias</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/jekyll-update/">jekyll update</a><span class="category-list-count">3</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">Archivos</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">3</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">Etiquetas</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ss/">ss</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/work/">work</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">Nube de etiquetas</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/ss/" style="font-size: 20px;">ss</a> <a href="/tags/work/" style="font-size: 10px;">work</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">Links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-chevron-up"></div>
+</aside>
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2016 Jucsinsun<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-icarus';
+    
+    
+    var disqus_url = 'http://jucsinyu.com/2015/11/15/2015-11-16-Android-study/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+    
+        <script src="/vendor/fancybox/jquery.fancybox.pack.js"></script>
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
